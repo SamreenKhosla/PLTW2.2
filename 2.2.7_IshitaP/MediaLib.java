@@ -12,10 +12,19 @@ public class MediaLib
     book = b;
   }
 
-  public String toString() 
-  {
-    String info = "";
-    
-    return info;
+  @Override
+public String toString() {
+  if (book == null) {
+    return "MediaLib is empty.";
   }
+  return "MediaLib contains: " + book;
+}
+
+// CODE TO ADD
+public Book getBook()
+{
+  return book;
+}
+
+
 }

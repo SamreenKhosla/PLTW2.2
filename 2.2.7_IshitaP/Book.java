@@ -16,6 +16,8 @@ public class Book
     author = a;
     rating = 0;
   }
+
+  
   
    /*** Accessor methods ***/
   public String getTitle() {
@@ -48,4 +50,20 @@ public class Book
   public void setAuthor(String a) {
     author = a;
   }
-}
+
+  public int adjustRating(int r) {
+    
+    rating += r;
+      if (rating > 10) {
+        rating = 10;
+      }
+      else if (rating < 0) {
+        rating = 0;
+      }
+
+      return rating;
+    }
+    
+  }
+
+
