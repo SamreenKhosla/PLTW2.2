@@ -22,7 +22,17 @@ public class  Board
 
   
   /* your code here - accessor(s) */
+  public String getUnsolvedPhrase() {
+    return phrase;
+  }
   
+  public String getSolvedPhrase() {
+    return solvedPhrase;
+  }
+
+  public int getCurrentLetterValue() {
+    return currentLetterValue;
+  }
   /* your code here - mutator(s)  */
 
 
