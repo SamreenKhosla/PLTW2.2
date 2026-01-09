@@ -3,8 +3,8 @@
  *
  * A Board class the PhraseSolverGame
  */
-import java.util.Scanner;
 import java.io.File;
+import java.util.Scanner;
 
 public class  Board
 {
@@ -13,9 +13,26 @@ public class  Board
   private int currentLetterValue; 
 
   /* your code here - constructor(s) */ 
+  public Board() {
+    solvedPhrase = "";
+    phrase = loadPhrase();
+    currentLetterValue = 0;
+    System.out.println("Phrase: " + phrase); //temp test code
+  }
+
   
   /* your code here - accessor(s) */
+  public String getUnsolvedPhrase() {
+    return phrase;
+  }
   
+  public String getSolvedPhrase() {
+    return solvedPhrase;
+  }
+
+  public int getCurrentLetterValue() {
+    return currentLetterValue;
+  }
   /* your code here - mutator(s)  */
 
 
@@ -103,3 +120,4 @@ public class  Board
     return foundLetter;
   } 
 } 
+
