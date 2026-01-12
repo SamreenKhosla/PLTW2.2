@@ -35,7 +35,7 @@ public class Player
   }
 
   public int getScore() {
-    return score 
+    return score; 
   }
 
   /* your code here - mutator(s) */ 
